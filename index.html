@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloucestershire Bike Theft Reduction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image.png" alt="Gloucestershire Constabulary Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="subpage.html">Login or Register</a></li>
+                <li><a id="register-bike-link" href="#">Register Bike</a></li>
+                <li><a href="police_login.php">Police Login</a></li>
+                <li><a href="bike_saftey.html">Learn More</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Gloucestershire Constabulary</h1>
+            <h2>Bicycle Theft Reduction</h2>
+            <p>Join us in making Gloucestershire safer. Register your bike and report theft.</p>
+            <a href="subpage.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Gloucestershire Constabulary - Contact 111 to Report a Bike Stolen</p>
+    </footer>
+
+    <script>
+        // JavaScript code to handle the Register Bike link
+        document.getElementById("register-bike-link").addEventListener("click", function(event) {
+            // Check if the user is logged in (You may need to implement this logic)
+            var userIsLoggedIn = false;
+
+            if (userIsLoggedIn) {
+                // User is logged in, redirect to the registration page
+                window.location.href = "bike_reg.html";
+            } else {
+                // User is not logged in, redirect to the login page
+                window.location.href = "subpage.html";
+            }
+            event.preventDefault(); // Prevent the default link behavior
+        });
+    </script>
+</body>
+</html>
